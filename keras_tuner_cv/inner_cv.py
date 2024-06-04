@@ -10,7 +10,7 @@ import numpy as np
 from sklearn.model_selection import BaseCrossValidator
 
 from keras_tuner.engine.tuner import Tuner, maybe_distribute
-from keras_tuner.engine import tuner_utils
+from keras_tuner.src.engine import tuner_utils
 from keras_tuner.engine import trial as trial_module
 
 from keras_tuner_cv.utils import get_metrics_std_dict

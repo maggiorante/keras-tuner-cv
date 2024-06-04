@@ -5,7 +5,7 @@ from sklearn.model_selection import BaseCrossValidator
 from sklearn.model_selection import train_test_split
 
 import tensorflow as tf
-from keras_tuner.engine import tuner_utils
+from keras_tuner.src.engine import tuner_utils
 
 from keras_tuner_cv.utils import get_metrics_std_dict
 
