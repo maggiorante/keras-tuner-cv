@@ -220,7 +220,7 @@ def inner_cv(
                         y_val,
                         batch_size=len(x_val),
                         return_dict=True,
-                        verbose=self._display.verbose,
+                        verbose=self.oracle.verbose,
                     )
                     obj_value.update(
                         {"val_" + str(key): val for key, val in val_res.items()}
@@ -283,7 +283,7 @@ def inner_cv(
             y = model.predict(
                 x,
                 batch_size=len(x),
-                verbose=self._display.verbose,
+                verbose=self.oracle.verbose,
             )
             with open(
                 filename,
